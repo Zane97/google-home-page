@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a{
+    margin: 5px;
+}
+
+.search{
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "search-bar search-bar"
+    "search-but lucky";
+    gap: 20px 10px;
+}
+
+.search .logo{
+    grid-area: logo;
+    justify-self: center;
+}
+
+.search .search-bar{
+    grid-area: search-bar;
+    justify-self: center;
+    width: 500px;
+}
+
+.search .search-butt{
+    grid-area: search-but;
+    justify-self: end;
+    width: 150px;
+}
+
+.search .lucky-butt{
+    grid-area: lucky;
+    justify-self: start;
+    width: 150px;
+}
+
+.offerd{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.offerd a{
+    margin: 5px;
+}
+
+.offerd p{
+    margin: 5px;
+}
