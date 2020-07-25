@@ -87,6 +87,6 @@ footer .top{
     grid-column: span 2;
 }
 
-footer .bottom .right{
+footer .btm-right{
     justify-self: end;
 }
