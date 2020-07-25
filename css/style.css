@@ -1,67 +1,92 @@
+/**********************/
+/* Overal page layout */
+/**********************/
+
+/* Centers the main content and stick the footer to the bottom */
 .site{
+    height: 100vh;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-main{
-    flex-grow: 1;
-    justify-self: center;
-}
-
+/* Pushes header content to the left */
 header{
     display: flex;
     justify-content: flex-end;
+}
+
+/* Centers main content */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+/*****************/
+/* Header Layout */
+/*****************/
 
 header a{
     margin: 5px;
 }
 
+/***************/
+/* Main layout */
+/***************/
+
 .search{
     display: grid;
-    grid-template-areas: 
-    "logo logo"
-    "search-bar search-bar"
-    "search-but lucky";
-    gap: 20px 10px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 5px;
 }
 
 .search .logo{
-    grid-area: logo;
+    grid-column: span 2;
     justify-self: center;
 }
 
 .search .search-bar{
-    grid-area: search-bar;
+    grid-column: span 2;
     justify-self: center;
-    width: 500px;
+    width: 380px;
 }
 
 .search .search-butt{
-    grid-area: search-but;
-    justify-self: end;
+    justify-self: right;
     width: 150px;
 }
 
 .search .lucky-butt{
-    grid-area: lucky;
-    justify-self: start;
+    justify-self: left;
     width: 150px;
 }
 
 .offerd{
     display: flex;
-    justify-content: center;
     margin-top: 25px;
 }
 
 .offerd a{
-    margin: 5px;
+    margin-left: 7px;
 }
 
-.offerd p{
-    margin: 5px;
+
+/*****************/
+/* Footer Layout */
+/*****************/
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+footer .top{
+    grid-column: span 2;
+}
+
+footer .bottom .right{
+    justify-self: end;
+}
