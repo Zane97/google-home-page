@@ -1,0 +1,33 @@
+a{
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/**********/
+/* Header */
+/**********/
+
+header{
+    font-size: 13px;
+    margin-top: 7px;
+    align-items: baseline;
+}
+
+header #account{
+    font-size: 25px;
+    color: white;
+    border: crimson 2px solid;
+    border-radius: 50%;
+    background-color: crimson;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+}
+
+header #account:hover{
+    text-decoration: none;
+}
